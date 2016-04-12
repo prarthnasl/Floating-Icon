@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent_black"
+    android:clickable="true"
+    android:padding="@dimen/space_10_dip">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@color/white_color">
+
+        <TextView
+            android:id="@+id/selected_products_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_8_dip"
+            android:text="0 Products selected"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/white_color"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/whatsapp_icon"
+            android:paddingTop="@dimen/space_8_dip"
+            android:text="@string/share_text"
+            android:textColor="@color/light_gray"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/whatsapp_icon"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/space_5_dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/whatsapp_head" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+        android:background="@color/translucent_black"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_10_dip"
+        android:paddingRight="@dimen/space_10_dip">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</RelativeLayout>

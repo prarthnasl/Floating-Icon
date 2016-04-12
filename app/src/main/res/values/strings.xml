@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FloatingIcon</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="accessibility_service_description">Accessibility Service</string>
+
+    <string name="share_text">SHARE</string>
+    <string name="install_whatsapp_text">Please Install Whatsapp</string>
+    <string name="share_products_text">Shared Products</string>
+    <string name="select_products_text">Select Products to Share</string>
+</resources>
